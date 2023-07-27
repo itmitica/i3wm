@@ -1,6 +1,16 @@
 # i3wm
 slimi3wm
 
+## menu
+
+### rofi
+
+```shell
+sudo apt install rofi
+rofi-theme-selector
+# Arc-Dark
+```
+
 ## keyboard
 
 ### switch layout / language
@@ -28,6 +38,16 @@ sudo cp ~/Downloads/i3-keyboard-layout /usr/local/bin/
 
 ```shell
 # cp /etc/i3/config ~/.config/i3/config
+...
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango:JuliaMono Medium 13
+...
+# start dmenu (a program launcher)
+# bindsym $mod+d exec --no-startup-id dmenu_run
+# A more modern dmenu replacement is rofi:
+# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+bindcode $mod+40 exec "rofi -show combi -combi-modes 'window,drun' -modes combi"
 ...
 # toggle tiling / floating
 # bindsym $mod+Shift+space floating toggle
