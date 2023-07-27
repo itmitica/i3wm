@@ -29,6 +29,12 @@ sudo cp ~/Downloads/i3-keyboard-layout /usr/local/bin/
 ```shell
 # cp /etc/i3/config ~/.config/i3/config
 ...
+# toggle tiling / floating
+# bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+# bindsym $mod+space focus mode_toggle
+...
 bar {
 #   status_command i3status
   status_command i3status | i3-keyboard-layout i3status
