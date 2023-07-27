@@ -13,6 +13,11 @@ setxkbmap us
 ### display
 https://github.com/porras/i3-keyboard-layout
 
+```shell
+chmod +x ~/Downloads/i3-keyboard-layout
+sudo cp ~/Downloads/i3-keyboard-layout /usr/local/bin/
+```
+
 
 ## config
 
@@ -27,9 +32,9 @@ workspace_layout tabbed
 # cp /etc/i3status.conf ~/.config/i3config/config
 ...
 # order += "ipv6"
-order += "wireless _first_"
-order += "ethernet _first_"
-order += "battery all"
+# order += "wireless _first_"
+# order += "ethernet _first_"
+# order += "battery all"
 # order += "disk /"
 # order += "load"
 # order += "memory"
