@@ -1,12 +1,19 @@
 # i3wm
 rice
 
-## keyboard language
+## keyboard
+
+### layout / language
 
 ```shell
 setxkbmap ro -variant std
 setxkbmap us
 ```
+
+### display
+https://github.com/porras/i3-keyboard-layout
+
+
 ## config
 
 ```shell
