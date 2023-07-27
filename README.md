@@ -1,5 +1,5 @@
 # i3wm
-rice
+slimi3wm
 
 ## keyboard
 
